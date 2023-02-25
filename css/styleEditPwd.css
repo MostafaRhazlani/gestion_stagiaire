@@ -1,0 +1,37 @@
+*, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+
+
+.form-group {
+  display: flex;
+  align-items: center;
+} 
+
+.form-group input {
+  margin-right: 3px;
+}
+
+h3 {
+  color: #337AB7;
+  margin: 0 0 10px 0;
+}
+
+h3 span {
+  color: navy;
+}
+
+.show_old_pwd, .show_new_pwd {
+  cursor: pointer;
+}
+
+.btn {
+  width: 97%;
+}
+
+img {
+  object-fit: cover;
+}
