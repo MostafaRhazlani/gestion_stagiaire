@@ -56,6 +56,17 @@
               <span class="glyphicon glyphicon-log-in"></span>
               Se connecter
             </button>
+            <br>
+            <br>
+            <div>
+              <a href="#">
+                Mot de passe Oublié
+              </a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="nouvelUtilisateur.php">
+                Créer un compte
+              </a>
+            </div>
           </form>
         </div>
       </div>
