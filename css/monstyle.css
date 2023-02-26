@@ -1,3 +1,45 @@
-.margetop {
+.margetop10 {
+    margin-top: 10px;
+}
+
+.margetop20 {
+    margin-top: 20px;
+}
+
+.margetop30 {
+    margin-top: 30px;
+}
+
+.margetop40 {
+    margin-top: 40px;
+}
+
+.margetop50 {
+    margin-top: 50px;
+}
+
+.margetop60 {
+    margin-top: 60px;
+}
+
+.margetop70 {
+    margin-top: 70px;
+}
+
+.margetop80 {
     margin-top: 80px;
+}
+
+.margetop90 {
+    margin-top: 90px;
+}
+
+h1,
+h2,
+h3 {
+    color: #337AB7;
+  }
+
+input {
+    margin-bottom: 15px; 
 }
