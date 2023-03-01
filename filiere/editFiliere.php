@@ -26,7 +26,7 @@
 <body>
     <?php include("../menu/menu.php"); ?>
     <div class="container">
-        <div class="panel panel-primary margetop">
+        <div class="panel panel-primary margetop80">
             <div class="panel-heading">Edition de la filière</div>
             <div class="panel-body">
                 <!-- form -->

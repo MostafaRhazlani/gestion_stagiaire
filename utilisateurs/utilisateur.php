@@ -42,7 +42,7 @@
   <?php include("../menu/menu.php"); ?>
 
   <div class="container">
-    <div class="panel panel-success margetop">
+    <div class="panel panel-success margetop80">
       <div class="panel-heading">rechercher des utilisateur</div>
       <div class="panel-body">
         <!-- form -->

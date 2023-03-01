@@ -28,7 +28,7 @@
     <?php include("../menu/menu.php"); ?>
 
     <div class="container">
-        <div class="panel panel-primary margetop">
+        <div class="panel panel-primary margetop80">
             <div class="panel-heading">Edition de l'utilisateur :</div>
             <div class="panel-body">
                 <!-- form -->

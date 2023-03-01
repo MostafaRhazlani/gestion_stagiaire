@@ -23,7 +23,7 @@
     <?php include("../menu/menu.php"); ?>
 
     <div class="container">
-        <div class="panel panel-primary margetop">
+        <div class="panel panel-primary margetop80">
             <div class="panel-heading">Le infos du nouveau stagiaire</div>
             <div class="panel-body">
                 <!-- form -->
