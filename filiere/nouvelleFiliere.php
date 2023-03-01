@@ -16,7 +16,7 @@
 <body>
     <?php include("../menu/menu.php"); ?>
     <div class="container">
-        <div class="panel panel-primary margetop">
+        <div class="panel panel-primary margetop80">
             <div class="panel-heading">Veuillez saisir les donnés de la nouvelle filière</div>
             <div class="panel-body">
                 <!-- form -->

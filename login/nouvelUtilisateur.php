@@ -2,10 +2,7 @@
     // require_once("../idontifier/idontifier.php");
     require_once('../connexiondb/connexiondb.php');
     require_once('../les_functions/functions.php');
-
-    // echo rechercher_par_login('admin');
-    // echo rechercher_par_email('mostafarhazlani@gmail.com');
-
+    
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $login = $_POST['login'];
@@ -35,12 +32,38 @@
         }
 
         if (isset($email)) {
-            $filtredEmail = filter_var($email, FILTER_SANITIZE_EMAIL);
+            $filtredEmail = filter_var($email, FILTER_SANITIZE_EMAIL); // mosta@gmail.com
 
             if($filtredEmail != true) {
                 $validationErrors[] = "Erreur!!! Email non valid";
             }
-        }        
+        } 
+        
+        if (empty($validationErrors)) {
+            if (rechercher_par_login($login) == 0 & rechercher_par_email($email) == 0) {
+                $requete = $pdo->prepare("INSERT INTO utilisateur(login, email, role, etat, pwd) 
+                                   VALUES(:plogin, :pemail, :prole, :petat, :ppwd)");
+
+                $requete->execute(array('plogin'   => $login,
+                                        'pemail'   => $email,
+                                        'prole'    => "VISITEUR",
+                                        'petat'    => 0,
+                                        'ppwd'     => md5($pwd1)));
+                
+                $success_msg = "Félicitation, votre compte est crée, mais temporiaremen jusqu'a activation par l'admin";
+            
+            } else {
+                if (rechercher_par_login($login) > 0) {
+                $validationErrors[] = "Désolé le login exsite deja";
+                }
+                
+                if (rechercher_par_email($email) > 0) {
+                    $validationErrors[] = "Désolé cet email exsite deja";
+                }
+            }
+            
+            
+        } 
     }
   
 ?>

@@ -1,6 +1,6 @@
 <?php 
   session_start();
-
+   
   if(isset($_SESSION['erreurLogin']))
     $erruerLogin = $_SESSION['erreurLogin'];
   else {
@@ -59,7 +59,7 @@
             <br>
             <br>
             <div>
-              <a href="#">
+              <a href="intialiserPwd.php">
                 Mot de passe Oublié
               </a>
               &nbsp;&nbsp;&nbsp;
