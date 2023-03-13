@@ -8,7 +8,7 @@
 
 .form-group {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 } 
 
 .form-group input {
